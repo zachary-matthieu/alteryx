@@ -1,0 +1,327 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>oklahoma_transactions.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Index" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Year-Month" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Agency Number" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Agency Name" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Cardholder Last Name" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Cardholder Firest Name" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Description" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Amount" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Vendor" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Transaction Date" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Posted Date" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Merchant Category Code (MCC)" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Field_13" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Field_14" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Field_15" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Field_16" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Field_17" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Field_18" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Field_19" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Field_20" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Field_21" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Field_22" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+            <Field name="Field_23" size="254" source="File: C:\Users\zacha\Hyperborea\r\csv\oklahoma_transactions.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="222" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Agency Number</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-07-21 12:25:50</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1000</Operand>
+              <StartDate>2023-07-21 12:25:50</StartDate>
+              <EndDate>2023-07-21 12:25:50</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Agency Number] = "1000"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings>
+        <Position x="366" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Index","Year-Month","Agency Number","Agency Name","Cardholder Last Name","Cardholder Firest Name","Description","Amount","Vendor","Transaction Date","Posted Date","Merchant Category Code (MCC)","Field_13","Field_14","Field_15","Field_16","Field_17","Field_18","Field_19","Field_20","Field_21","Field_22","Field_23"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="486" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Year-Month</Field>
+          <RegExExpression value="(.{4})(.{2})" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>Year-Month</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="RegExOut1" type="V_String" size="254" />
+            <Field field="RegExOut2" type="V_String" size="254" />
+          </ParseComplex>
+          <Match>
+            <Field>Index_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="594" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Index" selected="True" />
+            <SelectField field="RegExOut1" selected="True" rename="Year" type="Int64" size="8" />
+            <SelectField field="RegExOut2" selected="True" rename="Month" type="Int64" size="8" />
+            <SelectField field="Year-Month" selected="False" />
+            <SelectField field="Agency Number" selected="True" />
+            <SelectField field="Agency Name" selected="True" />
+            <SelectField field="Cardholder Last Name" selected="True" />
+            <SelectField field="Cardholder Firest Name" selected="True" />
+            <SelectField field="Description" selected="True" />
+            <SelectField field="Amount" selected="True" type="Float" size="4" />
+            <SelectField field="Vendor" selected="True" />
+            <SelectField field="Transaction Date" selected="True" size="2147483647" />
+            <SelectField field="Posted Date" selected="True" size="2147483647" />
+            <SelectField field="Merchant Category Code (MCC)" selected="True" />
+            <SelectField field="Field_13" selected="False" />
+            <SelectField field="Field_14" selected="False" />
+            <SelectField field="Field_15" selected="False" />
+            <SelectField field="Field_16" selected="False" />
+            <SelectField field="Field_17" selected="False" />
+            <SelectField field="Field_18" selected="False" />
+            <SelectField field="Field_19" selected="False" />
+            <SelectField field="Field_20" selected="False" />
+            <SelectField field="Field_21" selected="False" />
+            <SelectField field="Field_22" selected="False" />
+            <SelectField field="Field_23" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="702" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Trim([Transaction Date], '0:00')" field="Transaction Date" size="2147483647" type="V_String" />
+            <FormulaField expression="Trim([Posted Date], '0:00')" field="Posted Date" size="2147483647" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Transaction Date = Trim([Transaction Date], '0:00')
+Posted Date = Trim([Posted D...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="834" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\zacha\AppData\Local\Temp\Engine_17852_40c9d85e7a08374d8d945c5fafbc0272_\Engine_17852_1b84a871831acf44a44c933f531bf6c7~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="4" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output26" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>oklahoma_transactions</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="14188ee9-f52d-4591-b11f-4f2d9726226b" />
+      <Telemetry>
+        <PreviousWorkflowId value="b72f60c4-78ca-43d8-ab98-6c2a1eb1b490" />
+        <OriginWorkflowId value="b72f60c4-78ca-43d8-ab98-6c2a1eb1b490" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
